@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+        <test verbose="2" preserve-order="true"  name="abc">
+            <parameter name="env" value="dev"/>
+            <classes>
+                <class name="cucumber.Options.TestRunner"/>
+            </classes>
+        </test>
+        <test verbose="2" preserve-order="true"  name="xyz">
+            <parameter name="env" value="qa"/>
+            <classes>
+                <class name="cucumber.Options.TestRunner"/>
+            </classes>
+        </test>
+</suite>

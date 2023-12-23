@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="abc(failed)" verbose="0">
+    <parameter name="env" value="dev"/>
+    <classes>
+      <class name="cucumber.Options.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- cucumber.Options.TestRunner -->
+    </classes>
+  </test> <!-- abc(failed) -->
+  <test thread-count="5" name="xyz(failed)" verbose="0">
+    <parameter name="env" value="qa"/>
+    <classes>
+      <class name="cucumber.Options.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- cucumber.Options.TestRunner -->
+    </classes>
+  </test> <!-- xyz(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
